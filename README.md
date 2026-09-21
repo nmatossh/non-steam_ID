@@ -4,7 +4,7 @@
 
 Extrae el `appid` numérico y el nombre de cada juego non-Steam (acceso directo/shortcut) configurado en Steam, parseando directamente el archivo binario `shortcuts.vdf`.
 
-## Motivación
+## Finalidad
 
 Steam asigna a cada juego non-Steam un `appid` generado (CRC32 sobre el ejecutable + nombre) que también se usa como nombre de carpeta en `steamapps/compatdata/<appid>/` cuando el juego corre bajo Proton. Ese `appid` no es legible ni buscable por otros medios simples: herramientas como `strings` descartan el valor porque está almacenado en binario (4 bytes little-endian), no como texto.
 
